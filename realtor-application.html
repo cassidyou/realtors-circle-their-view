@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtor Application - Realtors Circle</title>
+  <link rel="shortcut icon" type="text/css" href="asset/img/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-pzjw8+u7LVHuX7HR/TaJK1z4pQD5U6DY2P2WxI7tXDAe7MWI4VjxCt/dZRtF+l5fw" crossorigin="anonymous">
+
+
+  <!-- Datatables CSS -->
+  <link rel="stylesheet" href="vendor/datatables/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="asset/css/aos.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header1 header-index">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container cosynav">
+          <a class="navbar-brand text-light" href="">
+            <!-- <img src="asset/img/logo.png" class="img-fluid" id="logo" alt="logo"> -->
+            Successs Haven
+          </a>
+
+          <!-- Nav Item -->
+          <ul class="navbar-nav ma-auto  nav-sm">
+            <!-- Logo on small screen -->
+            <div class="sm-logo-ctn d-lg-none">
+              <div class="menu-btn d-lg-none d-sm-block">
+                <div class="menu-btn-burger"></div>
+              </div>
+              <!-- <h5>ChildrenClub</h5> -->
+              <!-- <img src="asset/img/logo.png" class="img-fluid mb-2" alt=""> -->
+            </div>
+            <!-- <span class="close d-lg-none d-sm-block">&times;</span> -->
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="properties.html">Assets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link getstarted-btn" href="faq.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link getstarted-btn" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item nav-bg-ml">
+              <a href="register.html" class="nav-link primary-btn btn-rounded">
+                Become a realtor
+              </a>
+            </li>
+          </ul>
+          <!-- Harmburger menu icon -->
+          <div class="menu-btn d-lg-none d-sm-block">
+            <div class="menu-btn-burger"></div>
+          </div>
+        </div>
+      </nav>
+      <section style="margin-top: 180px;">
+        <div class="container">
+          <form action="" id="re-application-form">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <label for="">First Name</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <label for="">Last Name</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <label for="">Residential State</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Abia</option>
+                    <option value="">Anambra</option>
+                    <option value="">Akwa Ibom</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <label for="">Residential City</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">Aba</option>
+                    <option value="">Abakaliki</option>
+                    <option value="">Awka</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 mb-5">
+                <div class="form-group">
+                  <label for="">About You</label>
+                  <textarea name="" id="us-bio" class="form-control" rows="10"></textarea>
+                  <div class="text-end">
+                    <small id="text-counter"><span id="entered-text">0</span>/<span id="total-text">1200</span></small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <label for="">Email Address</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <label for="">Phone Number</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-5">
+                <div class="form-group">
+                  <label for="">Facebook</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-5">
+                <div class="form-group">
+                  <label for="">LinkedIn</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-4 mb-5">
+                <div class="form-group">
+                  <label for="">Twitter</label>
+                  <input type="text" name="" id="" class="form-control">
+                </div>
+              </div>
+            </div>
+            <button class="primary-btn rounded w-100 mb-5">Submit Application</button>
+          </form>
+        </div>
+      </section>
+    </header>
+
+      <!--*****************  Footer section ***************** -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <h4 class="footer-logo-text">Success <br> Haven</h4>
+              <small class="d-none d-md-block">&copy;2024 Success Haven. All Rights Reserved.</small>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-md-4 col-lg-3 mb-4">
+              <h5 class="footer-middle-text">Discover real estate <br> properties seamlessly</h5>
+              <small>email: info@successhaven.ng</small>
+            </div>
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-md-4 col-lg-3 mb-0 mb-md-4">
+              <form action="" class="footer-form">
+                <div class="d-block d-md-flex align-items-center justify-content-between">
+                  <input type="text" name="email" placeholder="Email">
+                  <button class="sub-btn"><i class="fa fa-chevron-right"></i></button>
+                </div>
+              </form>
+              <div class="footer-socials">
+                <a href="javascript:;"><img src="asset/img/icons/facebook-icon-white.png" alt=""></a>
+                <a href="javascript:;"><img src="asset/img/icons/instagram-icon-alt.png" alt=""></a>
+                <a href="javascript:;"><img src="asset/img/icons/twitter-icon-white.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <small class="mt-4 d-block d-md-none">&copy;2024 Success Haven. All Rights Reserved.</small>
+        </div>
+      </footer>
+  </div>
+
+
+  <!-- JS FILES -->
+  <script src="vendor/jquery/jQuery3.6.1.min.js"></script>
+  <script src="vendor/popper/popper.js"></script>
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="vendor/fontawesome/all.min.js"></script>
+  <script src="vendor/jquery-validate/jquery.validate.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="asset/js/aos.js"></script>
+  <script src="asset/js/plugins_init.js"></script>
+  <script src="asset/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#us-bio').on('keyup', function(){
+        var $this = $(this);
+        let totalLength = $('#total-text').text();
+            totalLength = parseInt(totalLength);
+
+
+        let textLength = $(this).val().split(' ').filter(function(word){
+          return word != '';
+        }).length;
+
+        $('#entered-text').text(textLength);
+
+        if(textLength >= totalLength){
+          var maxText = $this.val();
+          var newText = maxText.split(' ').slice(0, totalLength).join(' ');
+          $this.val(newText)
+        } 
+
+      });
+    });
+  </script>
+</body>
+</html>
