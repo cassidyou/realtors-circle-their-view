@@ -2426,4 +2426,144 @@ footer#rcm-footer .socials img{
     left: -2000px;
 }
 
+.new-discussion-btn,
+.btn-danger, 
+.btn-success{
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    color: var(--white-color);
+    text-align: center;
+}
 
+.new-discussion-btn.outline-success{
+    background: transparent;
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+}
+
+.new-discussion-btn{
+    background-color:#007CFE ;
+}
+
+.outline-blue{
+    background-color: white;
+    border: 1px solid #007CFE;
+    color: black;
+}
+
+.btn-success{
+    background: var(--primary-green);
+}
+
+.btn-danger{
+    background: #DB1B24;
+}
+
+.btn-warning{
+    background: #E8AA0A;
+
+}
+
+
+.divided-pg{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.divided-pg form{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.divided-pg .row{
+    height: 100%;
+}
+
+.divided-pg img{
+    max-height: 100vh;
+}
+
+.social-ctn{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    z-index: 2;
+    width: 200px;
+}
+
+.first-divide::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(32, 39, 99, 0.651);
+}
+
+.divided-pg .logo-text{
+    color: var(--white-color);
+    font-family: var(--font-family-medium);
+    font-size: 20px;
+}
+
+
+.divided-pg .social-link{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.divided-pg .social-link img{
+    width: 20px;
+}
+
+.primary-color{
+    color: var(--primary-green)!important;
+}
+
+
+
+.faq-container .qua-container{
+    border: 1px solid #cccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+.faq-container .qua-container .question{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.faq-container .qua-container .answer {
+    font-size: 16px;
+    color: #757575;
+    padding-bottom: 10px;
+}
+
+.faq-container .question .question-title{
+    width: 95%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.faq-container .qua-container:first-child .question-title{
+    padding-top: 5px;
+}
+
+.faq-container .new-discussion-btn{
+    background: var(--off-white-60);
+    color: var(--black-color);
+    font-family: var(--font-family-semi-bold);
+}
